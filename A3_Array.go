@@ -38,4 +38,12 @@ func main() {
 	animals[0] = "cat"
 	animals[1] = "dog"
 	fmt.Println(animals)
+
+	// array 2d
+	array2d := [3][3]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	fmt.Println(array2d)
+
+	// don't forget index on array start from 0
+	var index21 = array2d[2][1]
+	fmt.Println(index21)
 }
