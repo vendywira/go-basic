@@ -39,6 +39,15 @@ func main() {
 	animals[1] = "dog"
 	fmt.Println(animals)
 
+	// append array
+	animalsAndFruits := append(animals, fruits[0], fruits[1], fruits[2], fruits[3])
+	fmt.Println(animalsAndFruits)
+
+	// copy
+	var animalCopy = []string{"sapi", "kerbau", "kambing"}
+	copy(animalCopy, animals)
+	fmt.Println(animalCopy)
+
 	// array 2d
 	array2d := [3][3]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 	fmt.Println(array2d)
